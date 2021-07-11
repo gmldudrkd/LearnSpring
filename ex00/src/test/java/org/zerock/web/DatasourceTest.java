@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //위의 @는 스프링이 로딩되도록,,
 public class DatasourceTest {
 	@Inject
-	private DataSource ds; //Inject는 스프링이 생성해서 주입해줌, 객체생성 필요업음
+	private DataSource ds; //Inject는 스프링이 생성해서 주입해줌, 객체생성 필요없음
 	@Test
 	public void testConnection() throws Exception{
 		try (Connection con = ds.getConnection()){
